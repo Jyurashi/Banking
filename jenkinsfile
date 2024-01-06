@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/devopscbabu/May-Banking.git'
+                git branch: 'main', url: 'https://github.com/Jyurashi/Banking.git'
             }
         }
         stage('Build Package') {
