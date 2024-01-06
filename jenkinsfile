@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build Package') {
             steps {
-                sh 'mvn clean package'
+                sh 'clean package'
             }
         }
         stage('HTML Reports') {
