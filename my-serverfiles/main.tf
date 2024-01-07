@@ -1,4 +1,4 @@
-resource "aws_instance" "test_server" {
+resource "aws_instance" "test-server" {
   ami = "ami-0a0f1259dd1c90938"
   instance_type = "t2.micro"
   key_name = "Jenkins"
