@@ -16,10 +16,10 @@ provisioner "remote-exec" {
 tags = {
   Name = "test-server"
 }
-provisioner "Local-exec" {
-    command = "echo ${aws_instance.test-server.public_ip} > inventory "
+provisioner "local-exec" {
+    command = " echo ${aws_instance.test-server.public_ip} > inventory "
 }
-provisioner "Local-exec" {
+provisioner "local-exec" {
     command = "ansible-playbook /var/lib/jenkins/workspace/target/BP/target/my-serverfiles/finance-playbook.yml"
 }
 }
